@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <title>Shopping Cart | CS Society USM</title>
+    <link rel="icon" type="image/x-icon" href="cs-soc-official.png" />
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <img src="cs-soc-official.png" alt="CS Logo" class="logo" />
+        <p class="society_name">
+            USM CS SOCIETY<br />
+            MERCHANDISE
+        </p>
+        <button class="cart_btn"><b>CART</b></button>
+        <img src="cart.png" alt="cart" class="cart_img" />
+    </div>
+    <div id="content" class="content">
+        <button class="not_accept_btn">
+            <img src="close.png" alt="close" class="not_accept_img" />
+            We are <b>not accepting new orders</b> at this time.<br />Thank you for
+            your support!
+        </button>
+    </div>
+    <div class="customer_info">
+        <h1><u>Customer Information</u></h1>
+        <label class="label">
+            <span class="name">Full Name</span><br><br>
+        </label>
+        <input id="full-name" name="full-name" type="text" class="input" required="" disabled="" size="30">
+        <br><br>
+        <span class="name">Matric Number</span><br><br>
+        </label>
+        <input id="matric-number" name="matric-number" type="text" class="input" required="" disabled="" size="30">
+        <br><br>
+        <span class="name">USM Email</span><br><br>
+        </label>
+        <input id="usm-email" name="usm-email" type="text" class="input" required="" disabled="" size="30">
+        <br><br>
+        <span class="name">Contact Number</span><br><br>
+        </label>
+        <input id="contact-number" name="contact-number" type="text" class="input" required="" disabled="" size="30">
+    </div>
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <img src="close.png" class="popout_img">
+            <h1>Your cart is empty</h1>
+            <p>Please add items to cart before proceeding!</p>
+            <br>
+            <button onclick="document.location='index.html'" class="ok">OK</button>
+        </div>
+    </div>
+    <script src="popout.js"></script>
+</body>
+</html>
